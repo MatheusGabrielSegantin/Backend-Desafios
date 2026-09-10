@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto 4</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calcular idade humana</h1>
+        <form action="/idade_pet" method="post">
+
+            <label for="pet">Idade do Pet</label>
+            <input type="number" name="pet" id="pet" step="0.01" required>
+
+            <button type="submit">Calcular</button>
+
+        </form>
+
+        {% if humano %}
+        <div class="resultado">
+            <h2>Resultado da idade</h2>
+            <p><strong>Idade: </strong> {{ humano }}</p>
+        </div>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
